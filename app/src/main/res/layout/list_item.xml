@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/id_productCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/id_imv_productImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/ic_launcher_foreground"/>
+
+            <TextView
+                android:id="@+id/id_tv_productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Product Name ....."
+                android:layout_toRightOf="@id/id_imv_productImage"/>
+
+            <TextView
+                android:id="@+id/id_tv_productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_tv_productName"
+                android:layout_toRightOf="@id/id_imv_productImage"
+                android:text="Price ........" />
+
+            <TextView
+                android:id="@+id/id_tv_pAvailaibility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_tv_productPrice"
+                android:layout_toRightOf="@id/id_imv_productImage"
+                android:text="Availaibility ........." />
+
+
+            <ToggleButton
+                android:id="@+id/id_toggleButton"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+         />
+
+
+</LinearLayout>
